@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=FontName&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="background"></div>
+
+ <heading class="centeredText text-light" style="font-family:'Malgun Gothic'">
+
+        <h8 style="color:#CD8B76">Made with love in Katy, TX</h8>
+        <h1 class="display-6">A coffee shop that makes you feel right at home.</h1>
+        <div class="flex-column bg-opacity-50">
+            <ul class="text-center " style="list-style:none;padding-right:25px;padding-top:10px">
+                <li>
+                    <a href="@Url.Action("Index", "Menu")" class="btn btn-outline-light btn-lg btn-block" style="width: 120px;margin-bottom:10px">Menu</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Contact")" class="btn btn-outline-light btn-lg btn-block" style="width: 120px;margin-bottom:10px">Find Us</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "About")" class="btn btn-outline-light btn-lg btn-block" style="width: 120px;margin-bottom:10px">About</a>
+                </li>
+            </ul>
+        </div>
+    </heading>
+
+    <div>
+    </div>
+</body>
+</html>

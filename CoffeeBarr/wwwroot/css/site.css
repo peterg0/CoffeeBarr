@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+    .break-line {
+        white-space: pre-line;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+  margin-bottom: 60px;
+  background:#222222;
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Use viewport height to cover the entire screen */
+    object-fit: cover;
+    filter: blur(8px) brightness(0.5);
+    background: url("../Photos/background1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    z-index:-1;
+}
+
+.background2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh; /* Use viewport height to cover the entire screen */
+    object-fit: cover;
+    background: url("../Photos/background2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+.centeredText {
+    position: absolute; /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    text-align:center;
+
+}
