@@ -1,22 +1,35 @@
-﻿@{
+﻿@model List<IList<object>>
+
+@{
     ViewData["Title"] = "Menu";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=FontName&display=swap" rel="stylesheet">
-</head>
+
 <body>
     <div class="text-light">
-        <header>
-            <h1>A coffee shop rooted in community, just like its people - located in the heart of Old Katy.</h1>
-            <p>
-                Welcome to The Coffee Barr, where we serve more than just exceptional coffee.
-                Our locally roasted, specialty blends are paired with freshly baked pastries and a delectable menu of breakfast and lunch items,
-                all crafted with care by our talented team.
-            </p>
-        </header>
-    </div>
+    <h1>Menu</h1>
+    
+    <table class="table table-striped table-dark">
+        <tr>
+            <th>Category</th>
+            <th>Item Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Small</th>
+            <th>Medium</th>
+            <th>Large</th>
+        </tr>
 
+        @foreach (var row in Model.Skip(1))
+        {
+            <tr class="">
+                @foreach (var cell in row)
+                {
+                    <td>@cell</td>
+                }
+            </tr>
+        }
+    </table>
+
+
+    </div>
 </body>
-</html>
